@@ -81,7 +81,8 @@ class Pelaaja {
      *
      * 8. Pekka Pelaaja (1 + 3 = 4)
      */
-    public void tulostaPelaaja(){
-	    System.out.println(Integer.toString(this.pelinumero)+". " + this.nimi + " (" + Integer.toString(this.maalit) + " + " + Integer.toString(this.syotot) + " = " + Integer.toString((this.maalit+this.syotot)) + ")" );
+    @Override
+    public String toString(){
+	    return Integer.toString(this.pelinumero)+". " + this.nimi + " (" + Integer.toString(this.maalit) + " + " + Integer.toString(this.syotot) + " = " + Integer.toString((this.maalit+this.syotot)) + ")" ;
     }
 }
